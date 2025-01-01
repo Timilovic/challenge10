@@ -1,0 +1,75 @@
+body{
+    background-color:  hsl(217, 54%, 11%);
+}
+
+main{
+    background-color: hsl(216, 50%, 16%);
+}
+.big-wrapper:hover  .wrapper{
+    cursor: pointer;
+    visibility: visible;
+
+}
+.wrapper{
+    transition: .9s ease-in-out;
+    cursor: pointer;
+    z-index: 200;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+}
+.wrapper:hover{
+    background-color:hsla(178, 100%, 50%, 0.438);
+    z-index: 200;
+}
+[class="text-white"]{
+    cursor: pointer;
+}
+h3[class="text-white"]:hover{
+    color: hsl(178, 100%, 50%) !important;
+}
+i{
+    font-size: 3rem;
+}
+.my-border{
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+.eth{
+    color: hsl(178, 100%, 50%);
+}
+
+.tex{
+    color: hsl(215, 51%, 70%);
+}
+.bum{
+    cursor: pointer;
+    transition: .6s;
+}
+.bum:hover{
+     color: hsl(178, 100%, 50%);
+}
+
+
+@media screen and (max-width:770px) {
+    main{
+        min-width: 368px !important;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        padding: 10px 14px !important;
+    }
+
+    .me{
+        margin-left: 9px !important;
+    }
+
+    img,  h3, p{
+        margin-bottom: 19px !important;
+    }
+}
